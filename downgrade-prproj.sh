@@ -32,9 +32,9 @@ for file in "$@"
 do
         EXT=$(echo "$file" | tail -c 7)
         if [[ $EXT == "prproj" ]]; then
-                PRFILE=$(gunzip < $file)
+                PRFILE=$(gunzip < "$file")
                 MODIFIED=$(echo "$PRFILE" | sed "s/62ad66dd-0dcd-42da-a660-6d8fbde94876\" Version=\".*\"/62ad66dd-0dcd-42da-a660-6d8fbde94876\" Version=\"1\"/")
-                echo "$MODIFIED" | gzip > ${file%.*}-downgraded.prproj
+                echo "$MODIFIED" | gzip > "${file%.*}-downgraded.prproj"
         fi
 done
 

@@ -7,7 +7,7 @@
 	<key>AMApplicationVersion</key>
 	<string>2.9</string>
 	<key>AMDocumentVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>actions</key>
 	<array>
 		<dict>
@@ -93,9 +93,9 @@ for file in "$@"
 do
         EXT=$(echo "$file" | tail -c 7)
         if [[ $EXT == "prproj" ]]; then
-                PRFILE=$(gunzip &lt; $file)
+                PRFILE=$(gunzip &lt; "$file")
                 MODIFIED=$(echo "$PRFILE" | sed "s/62ad66dd-0dcd-42da-a660-6d8fbde94876\" Version=\".*\"/62ad66dd-0dcd-42da-a660-6d8fbde94876\" Version=\"1\"/")
-                echo "$MODIFIED" | gzip &gt; ${file%.*}-downgraded.prproj
+                echo "$MODIFIED" | gzip &gt; "${file%.*}-downgraded.prproj"
         fi
 done</string>
 					<key>CheckedForUserDefaultShell</key>
