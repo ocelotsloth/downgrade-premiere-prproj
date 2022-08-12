@@ -41,7 +41,7 @@ SOFTWARE.
 
 ## Installing the MacOS Quick Action
 
-1. Download the files here: https://github.com/ocelotsloth/downgrade-premiere-prproj/archive/v1.0.1.zip
+1. Download the files here: https://github.com/ocelotsloth/downgrade-premiere-prproj/archive/v1.0.2.zip
   - The latest release can be found at https://github.com/ocelotsloth/downgrade-premiere-prproj/releases
 2. Extract the ZIP file and open the extracted folder.
 3. Double click the `downgrade-prproj.workflow` workflow file. Say yes when asked if you wish to import the workflow.

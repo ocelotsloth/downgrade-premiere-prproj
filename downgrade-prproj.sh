@@ -25,7 +25,7 @@
 # Description  : This script downgrades a Premiere Pro Project File
 # Args         : List of PRPROJ files to downgrade
 # Author       : Mark Stenglein
-# Email        : mark@stengle.in
+# Email        : hello@markstenglein.com
 ###################################################################
 
 for file in "$@"
